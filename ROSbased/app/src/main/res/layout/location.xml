@@ -88,7 +88,7 @@ Food / Drink"
         android:text="娛樂生活
 Entertainment\n
 Life"
-        android:textSize="38px"
+        android:textSize="35px"
         android:layout_x="495dp"
         android:layout_y="344dp"
         android:background="@drawable/btn2"/>
