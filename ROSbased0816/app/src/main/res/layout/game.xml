@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_x="0dp"
+        android:layout_y="0dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/gamebg_foreground"/>
+
+    <EditText
+        android:id="@+id/txtSub"
+        android:layout_width="382dp"
+        android:layout_height="83dp"
+        android:layout_x="449dp"
+        android:layout_y="359dp"
+        android:alpha="0.7"
+        android:background="@drawable/custom_input"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btGO"
+        android:layout_width="144dp"
+        android:layout_height="58dp"
+        android:layout_centerInParent="true"
+        android:background="#F9F3C7"
+        android:text="GO"
+        android:textColor="#871313"
+        android:textSize="50px"
+        android:layout_x="568dp"
+        android:layout_y="493dp"/>
+
+    <TextView
+        android:id="@+id/range"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="618dp"
+        android:layout_y="207dp" />
+
+</AbsoluteLayout>

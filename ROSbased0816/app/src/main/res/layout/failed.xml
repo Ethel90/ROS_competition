@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btHome"
+        android:layout_width="73dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="4dp"
+        android:layout_x="1169dp"
+        android:layout_y="17dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/home"
+        app:layout_constraintBottom_toTopOf="@+id/homebtn" />
+
+    <TextView
+        android:id="@+id/homebtn"
+        android:layout_width="107dp"
+        android:layout_height="57dp"
+        android:layout_x="1151dp"
+        android:layout_y="118dp"
+        android:gravity="center"
+        android:text="回首頁 Home Page"
+        android:textColor="#0E0438"
+        android:textSize="36px" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_x="0dp"
+        android:layout_y="0dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/island_foreground"/>
+
+    <TextView
+        android:id="@+id/main"
+        android:layout_width="1004dp"
+        android:layout_height="198dp"
+        android:text="大義用盡了三次機會，仍沒有把公主救出來，希望下一位勇士能夠和大義幫助黛安娜公主脫困！"
+        android:textColor="#0E0438"
+        android:textSize="70px"
+        android:textStyle="bold"
+        android:layout_x="30dp"
+        android:layout_y="621dp"/>
+
+
+</AbsoluteLayout>
