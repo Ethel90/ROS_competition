@@ -81,6 +81,7 @@ public class Brand extends Page {
 
         final String[][] name = {{"a.testoni","AIGNER","AIGLE","ARMANI OUTLET","Arnold Palmer","BAZAAR","Bluebell","Brooks Brothers","borsalini","COACH FACTORY"}};
 
+
         Bundle bundle = this.getIntent().getExtras();
         String string = bundle.getString("Brand");
 
