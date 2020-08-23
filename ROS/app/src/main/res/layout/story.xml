@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/story_touch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_x="0dp"
+        android:layout_y="0dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/story_foreground" />
+
+    <TextView
+        android:id="@+id/main"
+        android:layout_width="1066dp"
+        android:layout_height="214dp"
+        android:text="某一日，大義與戴安娜相約喝下午茶，可當時間到了，大義遲遲等不到黛安娜。直到到了月亮城堡，發現黛安娜早已不見蹤影，床上僅留下一張紙條......"
+        android:textColor="#0E0438"
+        android:textSize="70px"
+        android:textStyle="bold"
+        android:layout_x="109dp"
+        android:layout_y="77dp"/>
+
+    <ImageView
+        android:layout_width="912dp"
+        android:layout_height="399dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/kraftpaper_foreground"
+        android:layout_x="200dp"
+        android:layout_y="327dp"/>
+
+    <TextView
+        android:id="@+id/main1"
+        android:layout_width="549dp"
+        android:layout_height="238dp"
+        android:text="
+你在尋找月亮公主嗎？想知道線索的話就來傳說中的E-Da島吧！嘿嘿～"
+        android:textColor="#000000"
+        android:textSize="70px"
+        android:textStyle="bold"
+        android:layout_x="366dp"
+        android:layout_y="373dp"/>
+
+    <TextView
+        android:id="@+id/main2"
+        android:layout_width="474dp"
+        android:layout_height="56dp"
+        android:text="橫行於愛琴海的邪惡海盜上"
+        android:textColor="#000000"
+        android:textSize="55px"
+        android:textStyle="bold"
+        android:layout_x="596dp"
+        android:layout_y="659dp"/>
+
+
+</AbsoluteLayout>

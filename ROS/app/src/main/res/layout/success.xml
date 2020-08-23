@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btHome"
+        android:layout_width="73dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="4dp"
+        android:layout_x="1169dp"
+        android:layout_y="17dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/home"
+        app:layout_constraintBottom_toTopOf="@+id/homebtn" />
+
+    <TextView
+        android:id="@+id/homebtn"
+        android:layout_width="107dp"
+        android:layout_height="57dp"
+        android:layout_x="1151dp"
+        android:layout_y="118dp"
+        android:gravity="center"
+        android:text="回首頁 Home Page"
+        android:textColor="#8377AC"
+        android:textSize="36px" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_x="0dp"
+        android:layout_y="0dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/castle_foreground"/>
+
+    <TextView
+        android:id="@+id/main"
+        android:layout_width="1156dp"
+        android:layout_height="164dp"
+        android:text="大義歷經千辛萬苦終於從寶箱取得鑰匙，成功救出公主，回到城堡，喝上了一個愉快的下午茶~"
+        android:textColor="#0E0438"
+        android:textSize="80px"
+        android:textStyle="bold"
+        android:layout_x="62dp"
+        android:layout_y="573dp"/>
+
+
+</AbsoluteLayout>

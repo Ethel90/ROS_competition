@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3DBD5"
+    tools:context=".MainActivity"
+    android:radius="30dp">
+
+    <TextView
+        android:id="@+id/main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="46dp"
+        android:layout_y="61dp"
+        android:text="Welcome to E-Da OUTLET MALL"
+        android:textColor="#1C0958"
+        android:textSize="85px"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btGuide"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+        android:layout_x="140dp"
+        android:layout_y="281dp"
+        android:alpha="0.5"
+        android:background="@mipmap/departmentstore_foreground" />
+
+    <Button
+        android:id="@+id/btDiscount"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+        android:layout_x="881dp"
+        android:layout_y="281dp"
+        android:alpha="0.5"
+        android:background="@mipmap/champagne_foreground" />
+
+    <Button
+        android:id="@+id/btActivity"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+        android:layout_x="504dp"
+        android:layout_y="281dp"
+        android:alpha="0.5"
+        android:background="@mipmap/balloon_foreground" />
+
+    <TextView
+        android:id="@+id/locationbtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_x="195dp"
+        android:layout_y="467dp"
+        android:text="櫃位導引"
+        android:textColor="#30082A"
+        android:textSize="70px"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/discountbtn"
+        android:layout_width="208dp"
+        android:layout_height="wrap_content"
+        android:layout_x="931dp"
+        android:layout_y="467dp"
+        android:text="折扣優惠"
+        android:textColor="#30082A"
+        android:textSize="70px"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/eventbtn"
+        android:layout_width="202dp"
+        android:layout_height="wrap_content"
+        android:layout_x="565dp"
+        android:layout_y="467dp"
+        android:text="活動快訊"
+        android:textColor="#30082A"
+        android:textSize="70px"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="402dp"
+        android:layout_height="200dp"
+        android:layout_x="865dp"
+        android:layout_y="626dp"
+        android:src="@mipmap/eda_foreground" />
+
+    <View
+        android:layout_width="432dp"
+        android:layout_height="5dp"
+        android:layout_x="51dp"
+        android:layout_y="157dp"
+        android:background="#B4A5C6"/>
+</AbsoluteLayout>
