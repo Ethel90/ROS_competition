@@ -45,7 +45,6 @@ public class Discount extends Page {
 
     private  void buildViews() {
         final Class nextPage = MainActivity.class;
-
         final Button btBrand;
         final Button btGame;
         final Button btBack;
