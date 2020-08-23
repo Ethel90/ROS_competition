@@ -43,7 +43,7 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/discountbtn2"
+        android:id="@+id/discountbtn3"
         android:layout_width="177dp"
         android:layout_height="50dp"
         android:layout_x="244dp"
