@@ -58,14 +58,13 @@
         android:layout_height="150dp"
         android:layout_x="891dp"
         android:layout_y="530dp"
-        android:src="" />
-
+        />
     <ImageView
         android:layout_width="317dp"
         android:layout_height="244dp"
         android:layout_x="480dp"
         android:layout_y="158dp"
-        android:src="" />
+         />
 
     <ImageView
         android:layout_width="995dp"

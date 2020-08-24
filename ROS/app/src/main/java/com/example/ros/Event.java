@@ -68,7 +68,9 @@ public class Event extends Page {
 
         btSpecial.setOnClickListener(new OnClickListener(){
             public void onClick(View v){
-                Event.super.SwitchPage(nextPage);
+                Intent intent = new Intent();
+                intent.setClass(Event.this, information.class);
+                startActivity(intent);
             }
         });
 
