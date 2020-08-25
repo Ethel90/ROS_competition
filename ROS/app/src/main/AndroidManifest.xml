@@ -23,7 +23,6 @@
         <activity android:name=".Event"/>
         <activity android:name=".Discount"/>
         <activity android:name=".Story"/>
-        <activity android:name=".Story2"/>
         <activity android:name=".Game"/>
         <activity android:name=".Success"/>
         <activity android:name=".Failed"/>

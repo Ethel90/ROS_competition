@@ -13,6 +13,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.content.Intent;
+import android.net.Uri;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 
 public class Event extends Page {
     @Override
@@ -76,9 +82,10 @@ public class Event extends Page {
 
         btDM.setOnClickListener(new OnClickListener(){
             public void onClick(View v){
-                Intent intent = new Intent();
-                intent.setClass(Event.this, dm.class);
-                startActivity(intent);
+                    Intent myWebLink = new Intent(android.content.Intent.ACTION_VIEW);
+                    myWebLink.setData(Uri.parse("http://www.edamall.com.tw/DM_MALL/DM_Mobile/DM_1/index.html"));
+                    startActivity(myWebLink);
+
             }
         });
 

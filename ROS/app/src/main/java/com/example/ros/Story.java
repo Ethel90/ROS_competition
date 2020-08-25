@@ -1,18 +1,66 @@
 package com.example.ros;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.net.Uri;
+import android.widget.MediaController;
+import android.widget.RelativeLayout;
+import android.widget.VideoView;
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.os.Handler;
+import android.util.DisplayMetrics;
+import android.view.Window;
+import android.view.WindowManager;
+import android.widget.TextView;
+
+import static android.view.View.getDefaultSize;
 
 public class Story extends Page {
+    VideoView videoView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
+
         setContentView(R.layout.story);
-        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_FULLSCREEN);
-        buildViews();
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                //執行在主執行緒
+//                //啟動主頁面
+//                RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) new RelativeLayout.LayoutParams(
+//                        RelativeLayout.LayoutParams.MATCH_PARENT,
+//                        RelativeLayout.LayoutParams.MATCH_PARENT);
+//
+//                videoView.setLayoutParams(params);
+//                videoView.layout(10, 10, 10, 10);
+                startActivity(new Intent(Story.this, Game.class));
+                finish();
+            }
+        },12500);
+
+//        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_FULLSCREEN);
+//        buildViews();
+       videoView = findViewById(R.id.videoView1);
+        String VideoPath = "android.resource://" + getPackageName() + "/" + R.raw.video_intro;
+        Log.d("Tag", VideoPath);
+        Uri uri= Uri.parse(VideoPath);
+        videoView.setVideoURI(uri);
+
+        MediaController mediaController = new MediaController(this);
+        videoView.setMediaController(mediaController);
+        mediaController.setAnchorView(videoView);
+
+
+        videoView.start();
     }
-    @Override
+
     protected void onStart() {
         super.onStart();
     }
@@ -41,16 +89,6 @@ public class Story extends Page {
         super.onDestroy();
     }
 
-    private  void buildViews() {
-        final View ST;
 
-        ST = (View) findViewById(R.id.story_touch);
-
-        ST.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                Story.super.SwitchPage(Story2.class);
-                finish();
-            }
-        });
     }
-}
+
