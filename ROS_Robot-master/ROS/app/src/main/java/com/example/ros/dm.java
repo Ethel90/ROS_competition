@@ -17,7 +17,7 @@ import com.journeyapps.barcodescanner.BarcodeEncoder;
 
 import java.util.ArrayList;
 
-public class dm extends Page {
+public class Dm extends Page {
 
 //    private ArrayList<Integer> images2 = new ArrayList<Integer>();
 
@@ -98,7 +98,7 @@ public class dm extends Page {
 
         btBack.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                dm.super.LastPage();
+                Dm.super.LastPage();
             }
         });
     }
@@ -160,7 +160,7 @@ public class dm extends Page {
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                Glide.with(dm.this).load(value).into(imageView);
+                Glide.with(Dm.this).load(value).into(imageView);
                 imageView.setVisibility(View.VISIBLE);
             }
         });

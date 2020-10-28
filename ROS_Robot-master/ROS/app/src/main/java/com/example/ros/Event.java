@@ -97,7 +97,7 @@ public class Event extends Page {
                 btDM.postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        Event.super.SwitchPage(dm.class);
+                        Event.super.SwitchPage(Dm.class);
                     }
                 }, 290);
             }

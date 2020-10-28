@@ -1,1 +1,0 @@
-# Temi Application
